@@ -1,0 +1,108 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Clean baseline font for readability */
+  background: url('/portfolio/download\ \(2\).jpeg') no-repeat center center fixed; /* Replace with your preferred single background image */
+  background-size: cover;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Heading - Using the elegant cursive font from your main page */
+h1 {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.4); /* Subtle red glow matching the background vibe */
+}
+
+/* Main Container */
+.scene {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Projects Responsive Grid */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Project Cards */
+div.card {
+  background: rgba(15, 5, 5, 0.75); /* Deep dark tint to contrast against the red/black background */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(8px); /* Soft glass effect */
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect to bring cards forward */
+div.card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(230, 20, 20, 0.4); /* Subtly lights up with a red border on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5), 0 0 15px rgba(230, 20, 20, 0.15);
+}
+
+/* Project Images */
+img.card {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.05); /* Fallback placeholder tint */
+}
+
+/* Project Titles */
+.card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 400;
+  color: #f0f0f0;
+  letter-spacing: 0.5px;
+}
+
+/* View Links - Utilizing the cursive style for cohesion */
+.card a {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-size: 1.25rem;
+  color: #ff4d4d; /* Muted vibrant red inspired by the portfolio palette */
+  text-decoration: none;
+  margin-top: auto; /* Pushes the link to the bottom if text lengths vary */
+  padding: 5px 10px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.card a:hover {
+  color: #ffffff;
+  border-color: #ffffff; /* Mimics the clean underlining highlight motif */
+}
+ 
+
+
