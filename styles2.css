@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, sans-serif; /* Clean baseline font for readability */
-  background: url('/portfolio/download\ \(2\).jpeg') no-repeat center center fixed; /* Replace with your preferred single background image */
+  background: url('download\ \(2\).jpeg') no-repeat center center fixed; /* Replace with your preferred single background image */
   background-size: cover;
   color: #ffffff;
   min-height: 100vh;
